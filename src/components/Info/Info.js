@@ -8,7 +8,8 @@ export const Info = () => {
   useEffect(() => {
     const data = async () => {
       const fetchData = await fetchNews();
-      setNews(fetchData);
+      console.log(fetchData)
+     setNews(fetchData);
     };
     data();
   }, []);
