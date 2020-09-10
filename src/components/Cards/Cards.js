@@ -18,7 +18,7 @@ export const Cards = ({
           component={Card}
           xs={12}
           md={3}
-          className={cx(styles.card, styles.infected)}
+          className={styles.card}
         >
           <CardContent >
             <Typography color="textSecondary" gutterBottom>
@@ -45,7 +45,7 @@ export const Cards = ({
           component={Card}
           xs={12}
           md={3}
-          
+          className={styles.card}
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
@@ -72,7 +72,7 @@ export const Cards = ({
           component={Card}
           xs={12}
           md={3}
-          
+          className={styles.card}
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
