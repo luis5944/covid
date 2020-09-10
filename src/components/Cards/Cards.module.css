@@ -1,0 +1,32 @@
+.container {
+  margin: 50px 0;
+}
+
+.card {
+  margin: 0 2% !important;
+}
+
+.infected {
+  border-bottom: 10px solid orange;
+  opacity: 50%;
+}
+.recovered {
+  border-bottom: 10px solid green;
+  opacity: 50%;
+}
+.deaths {
+  border-bottom: 10px solid red;
+  opacity: 50%;
+}
+
+.infected:hover,
+.recovered:hover,
+.deaths:hover {
+  opacity: 100%;
+}
+
+@media (max-width: 770px) {
+  .card {
+    margin: 2% 0 !important;
+  }
+}
