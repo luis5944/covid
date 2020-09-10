@@ -2,7 +2,7 @@ import axios from "axios";
 
 const url = "https://covid19.mathdro.id/api";
 const ulrNews =
-  "http://newsapi.org/v2/everything?language=es&q=coronavirus&from=2020-08-10&sortBy=publishedAt&apiKey=8d461b4b16534642b955473385154874";
+  "https://newsapi.org/v2/everything?language=es&q=coronavirus&from=2020-08-10&sortBy=publishedAt&apiKey=8d461b4b16534642b955473385154874";
 export const fetchNews = async () => {
   const {data:{articles}} = await axios.get(ulrNews);
   return articles;
