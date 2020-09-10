@@ -2,21 +2,21 @@
   margin: 50px 0;
 }
 
-.card {
-  margin: 0 2% !important;
-}
 
 .infected {
   border-bottom: 10px solid orange;
   opacity: 50%;
+  margin: 0 1% !important;
 }
 .recovered {
   border-bottom: 10px solid green;
   opacity: 50%;
+  margin: 0 1% !important;
 }
 .deaths {
   border-bottom: 10px solid red;
   opacity: 50%;
+  margin: 0 1% !important;
 }
 
 .infected:hover,

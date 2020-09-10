@@ -3,7 +3,6 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import styles from "./Cards.module.css";
 import CountUp from "react-countup";
 
-
 export const Cards = ({
   data: { confirmed, recovered, deaths, lastUpdate },
 }) => {
@@ -12,14 +11,14 @@ export const Cards = ({
   }
 
   return (
-    <div >
+    <div className={styles.container}>
       <Grid container spacing={3} justify="center">
         <Grid
           item
           component={Card}
           xs={12}
           md={3}
-          className={styles.card}
+          className={styles.infected}
         >
           <CardContent >
             <Typography color="textSecondary" gutterBottom>
@@ -46,7 +45,7 @@ export const Cards = ({
           component={Card}
           xs={12}
           md={3}
-          className={styles.card}
+          className={styles.recovered}
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
@@ -73,7 +72,7 @@ export const Cards = ({
           component={Card}
           xs={12}
           md={3}
-          className={styles.card}
+          className={styles.deaths}
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
