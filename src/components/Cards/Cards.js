@@ -13,17 +13,12 @@ export const Cards = ({
   return (
     <div className={styles.container}>
       <Grid container spacing={3} justify="center">
-        <Grid
-          item
-          component={Card}
-          xs={12}
-          md={3}
-          className={styles.card}
-        >
-          <CardContent >
-            <Typography color="textSecondary" gutterBottom>
+        <Grid item component={Card} xs={12} md={3} className={styles.card}>
+          <CardContent>
+            <Typography color="error" gutterBottom>
               Infectados
             </Typography>
+
             <Typography variant="h5">
               <CountUp
                 start={0}
@@ -40,15 +35,9 @@ export const Cards = ({
             </Typography>
           </CardContent>
         </Grid>
-        <Grid
-          item
-          component={Card}
-          xs={12}
-          md={3}
-          className={styles.card}
-        >
+        <Grid item component={Card} xs={12} md={3} className={styles.card}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="primary" gutterBottom>
               Recuperados
             </Typography>
             <Typography variant="h5">
@@ -67,13 +56,7 @@ export const Cards = ({
             </Typography>
           </CardContent>
         </Grid>
-        <Grid
-          item
-          component={Card}
-          xs={12}
-          md={3}
-          className={styles.card}
-        >
+        <Grid item component={Card} xs={12} md={3} className={styles.card}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Muertes
