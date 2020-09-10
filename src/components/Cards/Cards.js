@@ -11,7 +11,7 @@ export const Cards = ({
   }
 
   return (
-    <div className={styles.container}>
+    <div >
       <Grid container spacing={3} justify="center">
         <Grid
           item
@@ -45,7 +45,7 @@ export const Cards = ({
           component={Card}
           xs={12}
           md={3}
-          className={cx(styles.card, styles.recovered)}
+          
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
@@ -72,7 +72,7 @@ export const Cards = ({
           component={Card}
           xs={12}
           md={3}
-          className={cx(styles.card, styles.deaths)}
+          
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
