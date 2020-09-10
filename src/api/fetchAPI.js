@@ -2,7 +2,7 @@ import axios from "axios";
 
 const url = "https://covid19.mathdro.id/api";
 const ulrNews =
-  "https://newsapi.org/v2/everything?q=covid&language=es&from=2020-08-10&sortBy=publishedAt&apiKey=8d461b4b16534642b955473385154874";
+  "https://gnews.io/api/v3/search?q=coronavirus&country=es&lang=es&token=127182c0786a17ef571705893296cc31";
 export const fetchNews = async () => {
   const {
     data: { articles },
