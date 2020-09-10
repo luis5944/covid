@@ -11,7 +11,7 @@ export const Cards = ({
   }
 
   return (
-    <div className={styles.container}>
+    <div >
       <Grid container spacing={3} justify="center">
         <Grid
           item
