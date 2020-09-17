@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchNews } from "../../api/fetchAPI";
-import { Grid, Card, CardContent, Typography } from "@material-ui/core";
+
 import "./Info.css";
 export const Info = () => {
   const [news, setNews] = useState([]);
@@ -8,37 +8,40 @@ export const Info = () => {
   useEffect(() => {
     const data = async () => {
       const fetchData = await fetchNews();
-      console.log(fetchData)
-     setNews(fetchData);
+      setNews(fetchData);
+      console.log(fetchData);
     };
     data();
   }, []);
-
-  console.log(news);
 
   return (
     <div>
       {news.map((n, i) => {
         return (
-          <div key={i} className="grid-container-info">
-            <Grid item component={Card} xs={12} md={10}>
-              <a
-                href={n.url}
-                className="grid-a-info "
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <CardContent>
-                  <Typography color="textSecondary" gutterBottom align="center">
-                    NOTICIA
-                  </Typography>
-                  <Typography color="textSecondary">{n.title}</Typography>
-                  <Typography variant="body2" color="textPrimary">
-                    {n.description}
-                  </Typography>
-                </CardContent>
-              </a>
-            </Grid>
+          <div className="col s12 m6 l4" key={i}>
+            <div className="card">
+              {n.image ? (
+                <div className="card-image imagen_a">
+                  <img src={n.image} alt={n.title} />
+                  <span className="card-title">{n.source.name}</span>
+                </div>
+              ) : null}
+
+              <div className="card-content">
+                <h3>{n.title}</h3>
+                <p>{n.description}</p>
+              </div>
+              <div className="card-action">
+                <a
+                  href={n.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="waves-effect waves-light btn"
+                >
+                  Ver noticia completa
+                </a>
+              </div>
+            </div>
           </div>
         );
       })}

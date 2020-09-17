@@ -20,6 +20,12 @@
   
 }
 
+.imagen_a{
+  width: 50%;
+  height: 50%;
+  align-self: center;
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
